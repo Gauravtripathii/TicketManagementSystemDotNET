@@ -11,7 +11,8 @@ namespace TicketManagementSystem.Models
         public TicketStatus Status {get; set;}
         public TicketPriority Priority {get; set;}
         public DateTime CreatedDate {get; set;} = DateTime.Now;
-        public int AssignedTo {get; set;}   // id of the user
-        public int CreatedBy {get; set;}    // id of the user
+        public DateTime UpdatedDate {get; set;} = DateTime.Now;
+        public int AssignedToUserId {get; set;}   // id of the user
+        public int CreatedByUserId {get; set;}    // id of the user
     }
 }
