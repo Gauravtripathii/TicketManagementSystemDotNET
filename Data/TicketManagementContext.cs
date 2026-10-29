@@ -9,7 +9,7 @@ namespace TicketManagementSystem.Data
         public TicketManagementContext (DbContextOptions<TicketManagementContext> options) : base(options) {}
 
         public DbSet<User> Users {get; set;}
-        public DbSet<Ticket> Ticket {get; set;}
-        public DbSet<Comment> Comment {get; set;}
+        public DbSet<Ticket> Tickets {get; set;}
+        public DbSet<Comment> Comments {get; set;}
     }
 }
